@@ -95,8 +95,3 @@ npm run build:wasm    # Rebuild Rust Wasm Engine
 *   **The Boundary Cost**: Moving 10,000 vectors into Wasm has a one-time "Startup" cost. This represents the "Cold Start" of a client-side database.
 *   **JIT Warming**: V8 (JS) and Wasm engines optimize code at runtime. Use **10+ iterations** to see "warm" performance.
 *   **Precision**: Wasm uses `f32` (32-bit) while JS/Python use `f64`. This lab ensures Rank Consistency across precisions.
-
----
-
-## 📄 License
-MIT
