@@ -1,0 +1,17 @@
+{
+  "name": "wasm-language-lab",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "build:wasm": "wasm-pack build engines/rust --target web --out-dir pkg",
+    "generate-data": "node scripts/generate-datasets.js"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12"
+  }
+}
